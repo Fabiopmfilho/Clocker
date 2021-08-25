@@ -2,13 +2,13 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCr4bqD2kGS3NL0AJBQaNLpkF2pGlKM2rM",
-    authDomain: "clocker-work-io.firebaseapp.com",
-    projectId: "clocker-work-io",
-    storageBucket: "clocker-work-io.appspot.com",
-    messagingSenderId: "670663804885",
-    appId: "1:670663804885:web:1f75625620d8c5d5989f5c",
-    measurementId: "G-Z350GSBKQV"
+    apiKey: process.env.NEXT_PUBLIC_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_API_ID,
+    measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 // enviar para dotEnv
