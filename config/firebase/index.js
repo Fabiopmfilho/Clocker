@@ -11,9 +11,13 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
-// enviar para dotEnv
-// Initialize Firebase
-export default firebase.apps.length 
-    ? firebase.app() 
+const app = firebase.apps.length
+    ? firebase.app()
     : firebase.initializeApp(firebaseConfig);
+
+export const persistenceMode = firebase.auth.Auth.Persistence.LOCAL
+
+// Initialize Firebase
 // firebase.analytics();
+export default app
+
