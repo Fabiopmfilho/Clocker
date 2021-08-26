@@ -1,7 +1,9 @@
+import { Button } from '@chakra-ui/react'
+
 export default function Agenda() {
-    return (
-      <div>
-        Agenda
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Button>Sair</Button>
+    </div>
+  )
+}
